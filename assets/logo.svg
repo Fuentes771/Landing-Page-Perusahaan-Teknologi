@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">QuantumNet Logo</title>
+  <desc id="desc">A modern shield with a stylized Q and network orbit lines</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7F9"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" />
+    </filter>
+  </defs>
+  <g>
+    <!-- Shield -->
+    <path d="M64 8l36 12v30c0 30-20.5 54.5-36 60-15.5-5.5-36-30-36-60V20L64 8z" fill="url(#g)"/>
+    <!-- Inner ring -->
+    <circle cx="64" cy="56" r="24" stroke="white" stroke-width="6" fill="none" opacity="0.9"/>
+    <!-- Q tail -->
+    <path d="M80 72l12 12" stroke="white" stroke-width="6" stroke-linecap="round"/>
+    <!-- Orbits -->
+    <ellipse cx="64" cy="56" rx="34" ry="14" stroke="white" opacity="0.35" stroke-width="2" fill="none"/>
+    <ellipse cx="64" cy="56" rx="14" ry="34" stroke="white" opacity="0.35" stroke-width="2" fill="none"/>
+    <circle cx="88" cy="56" r="3" fill="#fff" filter="url(#soft)"/>
+    <circle cx="64" cy="30" r="3" fill="#fff" filter="url(#soft)"/>
+  </g>
+</svg>
