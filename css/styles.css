@@ -16,6 +16,7 @@ html,body{
 /* Mobile nav toggle (CSS only) */
 @media (max-width: 1023px){
   header #nav-toggle:checked ~ nav{ display:block; }
+  header #nav-toggle:checked ~ #nav-overlay{ display:block; }
 }
 
 /* Navbar links polish */
