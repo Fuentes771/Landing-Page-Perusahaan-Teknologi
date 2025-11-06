@@ -31,12 +31,12 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </label>
-        <nav id="primary-menu" class="hidden absolute top-full left-0 right-0 glass border border-gray-200 shadow-xl lg:shadow-none lg:border-0 lg:static lg:block">
-          <ul class="px-6 py-4 space-y-2 lg:space-y-0 lg:flex lg:items-center lg:space-x-8 lg:p-0">
+        <nav id="primary-menu" class="hidden absolute top-full left-0 right-0 bg-white rounded-b-2xl border border-gray-200 shadow-lg lg:shadow-none lg:border-0 lg:rounded-none lg:static lg:block">
+          <ul class="px-6 py-4 space-y-1 divide-y divide-gray-100 lg:divide-y-0 lg:space-y-0 lg:flex lg:items-center lg:space-x-8 lg:p-0">
             <li><a href="#features" class="nav-link block px-3 py-2 text-sm hover:text-indigo-600 font-medium">Fitur</a></li>
             <li><a href="#about" class="nav-link block px-3 py-2 text-sm hover:text-indigo-600 font-medium">Tentang</a></li>
             <li><a href="#contact" class="nav-link block px-3 py-2 text-sm hover:text-indigo-600 font-medium">Kontak</a></li>
-            <li class="lg:ml-6"><a href="#contact" class="inline-flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-indigo-600 text-white px-4 py-2 font-semibold shadow hover:opacity-90">Jadwalkan Demo</a></li>
+            <li class="lg:ml-6 mt-2 lg:mt-0"><a href="#contact" class="inline-flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-indigo-600 text-white px-4 py-2 font-semibold shadow hover:opacity-90">Jadwalkan Demo</a></li>
           </ul>
         </nav>
       </div>
@@ -48,13 +48,13 @@
   <!-- Hero Section -->
   <section id="home" class="relative overflow-hidden">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-20 sm:pt-20 sm:pb-28 lg:pt-28 lg:pb-40">
-      <div class="grid lg:grid-cols-2 gap-10 items-center">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <span class="inline-flex items-center rounded-full bg-cyan-50 text-cyan-700 px-3 py-1 text-xs font-semibold ring-1 ring-cyan-200">Cybersecurity • Jaringan • AI</span>
-          <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+          <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
             Keamanan Siber Cerdas untuk Jaringan Modern
           </h1>
-          <p class="mt-5 text-lg text-gray-600 max-w-xl">
+          <p class="mt-5 text-lg text-gray-600 max-w-xl leading-relaxed">
             QuantumNet melindungi sistem digital Anda dengan AI yang memantau, menganalisis, dan merespons ancaman secara real‑time. Aman, cepat, dan dapat diandalkan.
           </p>
           <div class="mt-8 flex flex-col sm:flex-row gap-3">
@@ -78,44 +78,27 @@
         </div>
         <div class="relative">
           <div class="absolute -inset-8 -z-10 bg-gradient-to-tr from-cyan-200 to-indigo-200 rounded-3xl blur-2xl opacity-30"></div>
-          <div class="relative rounded-2xl border border-gray-200 shadow-2xl bg-white bg-opacity-70 overflow-hidden">
-            <!-- Illustration -->
-            <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
-              <defs>
-                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#06b6d4"/>
-                  <stop offset="100%" stop-color="#8b5cf6"/>
-                </linearGradient>
-              </defs>
-              <rect x="0" y="0" width="600" height="420" fill="#0b1020" opacity="0.9"/>
-              <g opacity="0.2">
-                <circle cx="80" cy="60" r="3" fill="#06b6d4"/>
-                <circle cx="520" cy="100" r="3" fill="#8b5cf6"/>
-                <circle cx="300" cy="40" r="3" fill="#22d3ee"/>
-                <circle cx="420" cy="340" r="3" fill="#a78bfa"/>
-                <circle cx="160" cy="300" r="3" fill="#22d3ee"/>
-              </g>
-              <!-- Network nodes -->
-              <g stroke="url(#g1)" stroke-width="2" fill="none" opacity="0.8">
-                <path d="M120,300 C160,240 240,260 280,220 C320,180 380,200 420,160 C460,120 520,140 540,100"/>
-                <path d="M80,100 C140,140 180,180 240,140 C300,100 360,120 420,220 C480,320 520,320 560,300" opacity="0.6"/>
-              </g>
-              <!-- Shield -->
-              <g transform="translate(240,120)">
-                <path d="M60 0l40 12v32c0 32-22 58-40 64C42 102 20 76 20 44V12L60 0z" fill="url(#g1)"/>
-                <circle cx="60" cy="48" r="24" stroke="#fff" stroke-width="5" fill="none" opacity="0.95"/>
-                <path d="M78 66l10 10" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-                <ellipse cx="60" cy="48" rx="32" ry="12" stroke="#fff" opacity="0.3"/>
-                <ellipse cx="60" cy="48" rx="12" ry="32" stroke="#fff" opacity="0.3"/>
-              </g>
-              <!-- Labels -->
-              <g font-family="Inter, Arial" font-size="12" fill="#cbd5e1">
-                <text x="60" y="88">Packet Flow</text>
-                <text x="420" y="120">Threat Edge</text>
-                <text x="270" y="360">AI Analysis</text>
-              </g>
-            </svg>
-          </div>
+          <div class="relative rounded-2xl border border-gray-200 shadow-2xl bg-white overflow-hidden p-10 text-center">
+              <div class="mx-auto h-20 w-20 rounded-2xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center shadow-lg">
+                <img src="./assets/logo.svg" alt="QuantumNet" class="h-12 w-12" />
+              </div>
+              <h3 class="mt-6 text-lg font-semibold">Pertahanan jaringan berbasis AI</h3>
+              <p class="mt-2 text-gray-600">Realtime analytics · Zero‑Trust · Integrasi cepat</p>
+              <div class="mt-6 grid grid-cols-3 gap-4 text-sm">
+                <div class="rounded-lg border border-gray-200 p-3">
+                  <div class="font-semibold">99.99%</div>
+                  <div class="text-gray-500">Uptime</div>
+                </div>
+                <div class="rounded-lg border border-gray-200 p-3">
+                  <div class="font-semibold">Realtime</div>
+                  <div class="text-gray-500">Deteksi</div>
+                </div>
+                <div class="rounded-lg border border-gray-200 p-3">
+                  <div class="font-semibold">50+</div>
+                  <div class="text-gray-500">Integrasi</div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
